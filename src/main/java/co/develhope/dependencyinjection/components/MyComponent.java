@@ -3,7 +3,7 @@ package co.develhope.dependencyinjection.components;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
-@Data // vedere a cosa serve
+@Data
 @Component
 public class MyComponent {
 

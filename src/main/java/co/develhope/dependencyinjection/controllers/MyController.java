@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
 
     private MyService service;
-
-
     @Autowired
     public MyController(MyService service) {
         System.out.println("MyController constructor has been called");

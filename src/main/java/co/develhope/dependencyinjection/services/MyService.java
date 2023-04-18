@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 public class MyService {
 
     private MyComponent myComponent;
-
-    // constructor based injection
     @Autowired
     public MyService(MyComponent myComponent){
         System.out.println("MyService constructor has been called");
