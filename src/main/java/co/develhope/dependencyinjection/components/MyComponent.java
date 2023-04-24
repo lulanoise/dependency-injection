@@ -1,9 +1,6 @@
 package co.develhope.dependencyinjection.components;
-
-import lombok.Data;
 import org.springframework.stereotype.Component;
 
-@Data
 @Component
 public class MyComponent {
 
@@ -17,6 +14,21 @@ public class MyComponent {
     public String getMyComponentName(){
         System.out.println("MyComponent.getMyComponentName() has been called");
         return myComponentName;
+    }
+
+    public void setMyComponentName(String myComponentName) {
+        this.myComponentName = myComponentName;
+    }
+
+    @Override
+    public String toString() {
+        return "MyComponent{" +
+                "myComponentName='" + myComponentName + '\'' +
+                '}';
+    }
+
+    public MyComponent(String myComponentName) {
+        this.myComponentName = myComponentName;
     }
 
 }
