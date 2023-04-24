@@ -16,10 +16,6 @@ public class MyComponent {
         return myComponentName;
     }
 
-    public void setMyComponentName(String myComponentName) {
-        this.myComponentName = myComponentName;
-    }
-
     @Override
     public String toString() {
         return "MyComponent{" +
